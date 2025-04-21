@@ -11,13 +11,13 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		String[] str = br.readLine().split(" ");
-		bw.write(sclc(Integer.parseInt(str[0]),Integer.parseInt(str[1])) + "\n");
+		bw.write(sclc(Long.parseLong(str[0]),Long.parseLong(str[1])) + "\n");
 		
 		bw.flush();
 		br.close();
 		bw.close();
 	}
-	static public int sclc(int num01, int num02) {
+	static public long sclc(long num01, long num02) {
 		return (num01+num02)*(num01-num02);
 	}
 }
